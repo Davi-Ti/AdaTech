@@ -27,14 +27,14 @@ export const ButtonsWrapper = styled.div`
 `;
 
 interface AuthButtonProps {
-	isLogged: boolean;
+	$isLogged: boolean;
 }
 export const AuthButton = styled.button<AuthButtonProps>`
 	border: none;
 	border-radius: 5px;
 	height: 2rem;
 	padding: 0 1rem;
-	background-color: ${(props) => (props.isLogged ? "red" : "green")};
+	background-color: ${(props) => (props.$isLogged ? "red" : "green")};
 	color: white;
 	font-size: 0.8rem;
 

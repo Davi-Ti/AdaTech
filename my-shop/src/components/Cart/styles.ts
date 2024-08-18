@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 interface ContainerProps {
-	showCart: boolean;
+	$showCart: boolean;
 }
 
 export const Container = styled.aside<ContainerProps>`
 	position: fixed;
 	top: 0;
-	right: ${(props) => (props.showCart ? "0" : "-350px")};
+	right: ${(props) => (props.$showCart ? "0" : "-350px")};
 
 	width: 350px;
 	height: 100vh;
@@ -26,3 +26,16 @@ export const CloseButton = styled.button`
 `;
 
 export const Title = styled.h1``;
+
+export const CartProductsList = styled.ul`
+	padding: 2rem 0;
+	list-style: none;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+`;
+
+export const CartProductItem = styled.li``;
+
+export const CartTotal = styled.strong``;
