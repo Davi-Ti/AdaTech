@@ -39,7 +39,7 @@ export const Cart: React.FC<CartProps> = ({ showCart }) => {
 				))}
 			</S.CartProductsList>
 
-			<S.CartTotal>Total: ${total}</S.CartTotal>
+			<S.CartTotal data-testid="total">Total: ${total}</S.CartTotal>
 		</S.Container>
 	);
 };
